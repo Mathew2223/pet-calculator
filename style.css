@@ -1,6 +1,28 @@
-*{
+html{
     background: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
 }
 .calculator{
-    background: blue;
+    display: grid;
+    grid-template-column: 4;
+    width: 350px;
+    height: 500px;
+    background: #0090FF;
+    border-radius: 30px;
+    padding: 30px;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+div[class^="btn-"]{
+    background: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
 }
